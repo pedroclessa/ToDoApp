@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodoApp</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-r from-indigo-50 via-purple-50 to-indigo-100 min-h-screen flex justify-center items-center">
+    <div class="bg-white shadow-2xl rounded-lg p-20 max-w-lg">
+        <h1 class="text-3xl font-extrabold text-center text-purple-400 mb-6">Lista de Tarefas</h1>
+        <div class="flex mb-4">
+            <input
+                id="taskInput"
+                type="text"
+                class="flex-grow border border-gray-300 rounded-l-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                placeholder="Digite sua tarefa..."
+            />
+            <button
+                id="addTaskButton"
+                class="bg-purple-600 text-white px-6 py-2 rounded-r-lg font-medium hover:bg-purple-700 transition">
+                Adicionar
+            </button>
+        </div>
+        <ul id="taskList" class="space-y-4">
+            <!-- Tarefas serão inseridas aqui -->
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
